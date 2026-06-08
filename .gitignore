@@ -1,0 +1,32 @@
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin/
+/dist/
+vendor/
+/docs
+
+# Environment
+.env
+.env.local
+*.local
+
+# Next.js
+dashboard/.next/
+dashboard/node_modules/
+dashboard/out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
