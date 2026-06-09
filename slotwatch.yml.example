@@ -1,5 +1,5 @@
 postgres:
-  host: localhost
+  host: postgres
   port: 5432
   user: slotwatch
   password: ${SLOTWATCH_PG_PASSWORD}
