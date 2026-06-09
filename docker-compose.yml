@@ -8,6 +8,10 @@ services:
     # wal_level=logical is required to enable logical replication (CDC).
     # This is a Postgres startup flag — cannot be set at runtime.
     command: postgres -c wal_level=logical
+    # init-postgres.sql runs automatically on first start — creates the slotwatch user,
+    # demo tables, publication, and seed data. No manual SQL needed.
+    volumes:
+      - ./scripts/init-postgres.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "5432:5432"
     healthcheck:
